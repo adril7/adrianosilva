@@ -1,0 +1,518 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    background-color: #0e0f10;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+    
+
+.tabela-principal{
+    width: 100%;
+    height: 100vh;
+    border-collapse: collapse;
+}
+
+.cabecalho {
+    background: black;
+    color: white;
+    height: 200px;
+}
+
+.menu {
+    vertical-align: top;
+    text-align: center;
+    width: 10%;
+    height: 100%;
+    background: #1d1d22;
+    color: rgba(255, 255, 255, 0.871);
+    padding: 20px;
+    position: fixed;   
+}
+    
+
+.menu .logo {
+    font-size: 40px;
+    font-weight: 600;
+    border-bottom: 5px solid #25ca7f;                 
+}
+
+.menu p {
+    margin-bottom: 30px;
+}
+
+.menu a {
+    color: white;
+}
+
+.menu a i {
+    font-size: 30px;                 
+               
+}
+
+.menu a:hover {
+    color: #25ca7f;
+}
+
+.table-body {
+    padding-left: 25%;
+    padding-right: 15%;
+    vertical-align: top;
+}
+
+.title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+    
+
+.card-box {
+    display: flex;
+    
+}
+    
+
+.card-box-img img {
+    height: 200px;
+    border-radius: 100%;
+    border: 6px solid rgb(48, 46, 46);
+    align-items: center;
+}
+
+.card-box-body {
+    margin: 20px;
+}
+
+.service-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+} 
+    
+
+.service-container .service-item {
+    /*width: calc (33.33% -32px);*/
+    /*margin-bottom: 16px; */
+    width: 33%;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+}               
+    
+    
+
+.service-container .service-item .service-item-card {
+    border: 1px solid black;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+    
+   
+    
+
+.service-container .service-item .service-item-card:hover {
+    border: 1px solid #25ca7f;
+}
+    
+
+.service-container .service-item .service-item-card .service-item-card-icon {
+    background-color: #0e0f10;
+    height: 80px;
+    border: 1px solid black;
+    width: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-container .service-item .service-item-card .service-item-card-icon:hover {
+    border: 1px solid #25ca7f;
+}
+
+.service-container .service-item .service-item-card .service-item-card-icon i {
+    font-size: 30px;
+}
+
+.service-container .service-item .service-item-card .service-item-card-title {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.service-container .service-item .service-item-card .service-item-card-description {
+    text-align: center;
+}
+
+.flexbox {
+    display: flex;
+    gap: 30px;
+}
+
+.flexbox-item {
+    width: 50%;
+}
+
+.card {
+    background-color: #070708;
+    padding: 30px;
+    border-radius: 8px; 
+}
+
+.timeline-item {
+    padding-bottom: 30px;
+    border-left: 1px solid #25ca7f;
+    padding-left: 32px;
+    position: relative;
+}
+
+.timeline-item-period {
+    font-size: 12px;
+    color: #25ca7f;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.timeline-item-marker {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 7px;
+    left: -8px;
+}
+
+.timeline-item-marker-circle {
+    height: 15px;
+    width: 15px;
+    background: #25ca7f;
+    border-radius: 50%;
+}
+
+.timeline-item-marker-line {
+    height: 1px;
+    width: 15px;
+    background: #25ca7f;
+}
+
+#aboutMeSection, #experienceSection, #contactSection {
+    scroll-margin-top: 50px;
+}
+
+.progress-bar {
+    background-color: #0e0f10;
+    height: 8px;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.progress-bar-done {
+    background: #25ca7f;
+    height: 100%;
+    border-radius: 8px;
+    position: relative;
+}
+
+.progress-bar-done-check {
+    height: 20px;
+    width: 20px;
+    border: 4px solid #25ca7f;
+    border-radius: 50%;
+    position:absolute;
+    right: 0px;
+    top: -6px;
+    background-color: #0e0f10;
+}
+
+.progress-bar-title {
+    position: absolute; 
+    top: -30px;               
+}
+
+.progress-bar-done-text {
+    position: absolute;
+    top: -30px;
+    right: 0px;
+}
+
+.padding-top-60 {
+    padding-top: 60px;
+}
+
+.contact-item {
+    text-align: center;
+    flex-direction: column;
+    width: 30%;
+    gap: 2px;
+}
+
+.contact-item-icon {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: white;                
+}
+
+.contact-item-icon:hover {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #25ca7f;                
+}
+
+.contact-item-value a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact-item-value a:hover {
+    color: #25ca7f;
+}
+
+
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+body {
+color: rgba(255, 255, 255, 0.904);
+color: white;
+text-rendering: optimizeLegibility;
+font-smooth: antialiased;
+-webkit-font-smoothing: antialiased;
+font-family: 'Anonymous Pro', monospace;
+}
+
+/*
+Main
+*/
+.main {
+height: calc(20vh - 2em);
+padding: 4em;
+
+
+}
+
+.line-1{
+    
+    position: relative;
+    top: 50%;
+    width: 15em;
+    margin: auto;
+    right: 50%;
+    left: 0;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 250%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    
+}
+
+span {
+color: #25ca7f;
+}
+
+ /* Animation */
+ .anim-typewriter{
+    animation: typewriter 3s steps(40) 1s 1 normal both,
+    blinkTextCursor 1200ms steps(20) infinite normal;    
+    }
+
+    @keyframes typewriter{
+    from{width: 0;}
+    to{width: 12em;}
+    }
+
+    @keyframes blinkTextCursor{
+    from{border-right-color: rgba(243, 240, 240, 0.79);}
+    to{border-right-color: transparent;}
+    }
+
+    .hamburger-button {
+        display: none;
+    }
+
+    .icon-top {
+        display: none;
+    }
+
+
+/* RESPONSIVIDADE */
+
+@media (min-width: 270px) and (max-width: 900px) {
+
+    html {
+        color-scheme: dark light;
+    }
+
+    .table-body {
+        padding-left: 20%;
+        padding-right: 20%;
+        vertical-align: top;
+    }
+
+    .menu {
+        display: none;        
+    }
+        
+    
+    .menu .logo {
+        display: none;
+        font-size: 40px;
+        font-weight: 600;
+        border-bottom: 5px solid #25ca7f;                 
+    }
+    
+    .menu p {
+        margin-bottom: 30px;
+    }
+    
+    .menu a {
+        color: white;
+    }
+    
+    .menu a i {
+        font-size: 30px;                 
+                   
+    }
+    
+    .menu a:hover {
+        color: #25ca7f;
+    }
+
+    .main {
+        height: calc(20vh - 2em);
+        padding: 5px;
+         
+        }
+        
+        .line-1{            
+                        
+            top: 50%;
+            width: 15em;
+            border-right: 2px solid rgba(255,255,255,.75);
+            font-size: 120%;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            transform: translateY(-50%);
+            box-sizing: border-box;
+        }
+        
+            .card-box {
+                display: flex;                
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+            }
+
+            .service-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: nowrap;
+            }
+
+    .service-container .service-item{
+        width: 100%;
+        margin: 12px;
+    }
+
+   .service-container .service-item .service-item-card  {
+        border: 1px solid black;
+        height: 300px;             
+    }
+
+    .service-item-card-title {
+        text-align: center;
+    }
+
+    .flexbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .flexbox-item {
+        width: 100%;
+    }
+
+
+    .card {
+        background-color: #070708;
+        padding: 20px;
+        border-radius: 8px; 
+    }
+
+    .progress-bar {
+        background-color: #0e0f10;
+        height: 8px;
+        border-radius: 8px;
+        position: relative;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    .hamburger-button {
+        display: block;
+        padding: 12px;
+    }
+    
+    .w3-sidebar  {
+        display: block;
+        font-size: larger;
+        background-color: #1d1d22;
+    }
+
+    .lang {
+        display: block;
+        margin: 16px;
+    }
+
+    .container .icon-top { 
+        display: block;     
+        position: fixed;
+        bottom: 25px;
+        right: 25px;     
+        font-size: 22px; 
+        color: #25ca7f;  
+    }
+
+    .container .icon-top:hover::after {
+        margin-top:-8px;
+    }
+
+
+    .contact-arrow {
+    padding: 1px;
+    width: 90px;
+    background-color: #25ca7f;
+    height: 4px;
+    border-radius: 8px;
+    margin-top: 20px;    
+    }
+
+
+
+    }
+
+   
+
+/*fim respondsividade*/
