@@ -255,7 +255,7 @@ body {
 .contact-item {
     text-align: center;
     flex-direction: column;
-    width: 30%;
+    width: 25%;
     gap: 2px;
 }
 
@@ -491,7 +491,7 @@ color: #25ca7f;
         position: fixed;
         bottom: 25px;
         right: 25px;     
-        font-size: 22px; 
+        font-size: 28px; 
         color: #25ca7f;  
     }
 
@@ -509,6 +509,9 @@ color: #25ca7f;
     margin-top: 20px;    
     }
 
+    .contact-git {
+        margin-bottom: 20px;
+    }
 
 
     }
